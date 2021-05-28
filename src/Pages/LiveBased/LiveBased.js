@@ -3,6 +3,8 @@ import * as tf from "@tensorflow/tfjs";
 import * as cocossd from "@tensorflow-models/coco-ssd";
 import Webcam from "react-webcam";
 import { drawRect } from "./utilities";
+import './LiveBased.css'
+import Button from 'react-bootstrap/Button';
 
 function LiveBased() {
 
@@ -46,7 +48,11 @@ function LiveBased() {
     useEffect(()=>{runCoco()},[]);
     return (
         <div>
-        <header className="App-header">
+        <header className="header">
+            <h1>Live Object detection</h1>
+            
+            <p id="notice">Place the object to be detected in front of the camera</p>
+        </header>
         <Webcam
             ref={webcamRef}
             muted={true} 
@@ -77,7 +83,10 @@ function LiveBased() {
             height: 480,
             }}
         />
-        </header>
+        <div className="btn-container">
+        <Button id="btn-back"variant="warning">Back</Button>{' '}
+        <Button id="btn-help"variant="info">Help</Button>{' '}
+        </div>
         </div>
     );
 }
