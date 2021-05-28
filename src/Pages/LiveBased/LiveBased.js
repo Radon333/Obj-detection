@@ -1,4 +1,3 @@
-import React from 'react'
 import React, { useRef,useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as cocossd from "@tensorflow-models/coco-ssd";
