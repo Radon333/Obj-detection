@@ -1,10 +1,10 @@
-
-import React from 'react'
+import React, { Component } from 'react';
 import "./App.css";
 import styled from "styled-components";
 import {ImageBased} from './Pages/ImageBased/ImageBased'
-import LiveBased from './Pages/LiveBased/LiveBased'
 import { Button } from 'react-bootstrap';
+
+import LiveBased from './Pages/LiveBased/LiveBased'
 
 
 const AppContainer = styled.div`
