@@ -1,0 +1,36 @@
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    height:20vh;
+    background-color: #161b22;
+    color: white;
+  }
+
+#contact
+{
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+i
+{
+  padding-left:2vh;
+  padding-right:2vh;
+  color:white;
+  padding-top:3vh;
+}
+
+i:hover
+{
+  transform: scale(1.2);
+}
+@media screen and (max-width:700px)
+{
+    .footer {
+        text-align: center;
+        height:20vh;
+        background-color: #161b22;
+        width:100%;
+      }
+
+}
