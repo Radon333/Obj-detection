@@ -19,8 +19,7 @@ function Home() {
                         <br/>
                         <div className="about">
                         <h4 className="content">The application will help you identify objects you wish to detect</h4>
-                        <h4 className="content">The application uses web based ML model  to give you as much accurate result as possible</h4>
-                        <h4 className="content">The user can opt to detect and object in an image or live using camera.</h4>
+                        <h4 className="content">The user can opt to detect an object in an image or live using a camera.</h4>
                         </div>
                         <br/>
                         <div className="btn-container">
