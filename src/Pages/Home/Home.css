@@ -24,7 +24,7 @@
     
 }
 .content{
-    font-size:2vw;
+    font-size:3vh;
 }
 
 .btn-container{
@@ -33,4 +33,5 @@
 #btn1 , #btn2 {
     display:inline-block;
 }
+
 
