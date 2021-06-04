@@ -49,8 +49,7 @@ function LiveBased() {
         <div>
         <header className="header">
             <h1>Live Object detection</h1>
-            
-            <p id="notice">Place the object to be detected in front of the camera</p>
+            <br/>
         </header>
         <Webcam
             ref={webcamRef}
