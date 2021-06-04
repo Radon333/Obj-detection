@@ -14,7 +14,7 @@ const ObjectDetectorContainer = styled.div`
 
 const DetectorContainer = styled.div`
   min-width: 500px;
-  height: 600px;
+  height: 400px;
   border: 3px solid #fff;
   border-radius: 5px;
   display: flex;

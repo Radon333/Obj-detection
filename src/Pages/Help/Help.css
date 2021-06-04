@@ -1,8 +1,29 @@
 .hero-area{
     background-color: #182538;
-    height:85vh;
+    height:100vh;
 }
 
-.hero-text{
+
+.hero-text h1{
     color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 390px;
+    margin-bottom: 20px;
+}
+.accordion{
+    height:100%;
+    width:80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.inner-content{
+    background-color:blueviolet;
+}
+
+.inner-content p{
+    font-style: italic;
+    font-size: x-large;
+    font-family: 'Segoe UI';
 }
