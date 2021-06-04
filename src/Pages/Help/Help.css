@@ -1,16 +1,14 @@
 .hero-area{
     background-color: #182538;
-    height:100vh;
+    height:75vh;
 }
 
-
-.hero-text h1{
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-left: 390px;
-    margin-bottom: 20px;
+#faq{
+    text-align: center;
+    color:white;
+    margin-top:1vw;
 }
+
 .accordion{
     height:100%;
     width:80%;
@@ -19,11 +17,11 @@
     margin: auto;
 }
 .inner-content{
-    background-color:blueviolet;
+    background-color:rgb(73, 11, 131);
 }
 
 .inner-content p{
-    font-style: italic;
-    font-size: x-large;
+    font-size: large;
     font-family: 'Segoe UI';
+    color: azure;
 }
