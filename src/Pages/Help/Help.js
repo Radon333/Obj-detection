@@ -6,22 +6,22 @@ function Help() {
   return (
     <div>
       <div className="hero-area">
+      <h1 id="faq">Some FAQ's</h1>
         <div className="hero-text">
-          <h1>In case if u need any help</h1>
+          <br/>
         </div>
           <div className="accordion">
-            <Accordion defaultActiveKey="0">
+            <Accordion>
               <Card>
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    Images are not Recognizing
+                    Objects in images are not being detected?
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body className="inner-content">
                     <p>
-                      Images uploaded should not be blur and it should have a
-                      decent amount of quality
+                      Make sure the uploaded image isn't blurred and the object to be detected is focused.
                     </p>
                   </Card.Body>
                 </Accordion.Collapse>
@@ -29,14 +29,13 @@ function Help() {
               <Card>
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    Web Based Image is Not Recognizing
+                    Live Camera Based detection is not starting?
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body className="inner-content">
                     <p>
-                      The web camera quality should be decent in order to have a
-                      recognize the image
+                      You need to allow the website to use the camera when permission pop up box appears.It might take few minutes to start depending upon your system.
                     </p>
                   </Card.Body>
                 </Accordion.Collapse>
@@ -44,14 +43,13 @@ function Help() {
               <Card>
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    Web Pages are not working
+                    Found a bug? or want a new feature to be added?
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body className="inner-content">
                     <p>
-                      When the Sites are not working properly the website must
-                      be under construction and soon it will be working properly`
+                      You can raise an issue <a href="https://github.com/Radon333/Obj-detection/issues">here</a> with proper description and labels
                     </p>
                   </Card.Body>
                 </Accordion.Collapse>
