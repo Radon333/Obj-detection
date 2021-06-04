@@ -21,6 +21,7 @@ const DetectorContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top:2vw;
 `;
 
 const TargetImg = styled.img`
@@ -43,7 +44,6 @@ const SelectButton = styled.button`
   margin-top: 2em;
   cursor: pointer;
   transition: all 260ms ease-in-out;
-
   &:hover {
     background-color: transparent;
     border: 2px solid #fff;
@@ -53,16 +53,13 @@ const SelectButton = styled.button`
 
 const TargetBox = styled.div`
   position: absolute;
-
   left: ${({ x }) => x + "px"};
   top: ${({ y }) => y + "px"};
   width: ${({ width }) => width + "px"};
   height: ${({ height }) => height + "px"};
-
   border: 4px solid #1ac71a;
   background-color: transparent;
   z-index: 20;
-
   &::before {
     content: "${({ classType, score }) => `${classType} ${score.toFixed(1)}%`}";
     color: #1ac71a;
@@ -147,6 +144,7 @@ export function ImageBased(props) {
   };
 
   return (
+    
     <ObjectDetectorContainer>
       <DetectorContainer>
         {imgData && <TargetImg src={imgData} ref={imageRef} />}
