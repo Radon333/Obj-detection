@@ -1,0 +1,36 @@
+.Homes{
+    background-color: #182538;
+    height:87vh;
+}
+
+#title {
+    color:white;
+    text-align: center;
+    margin-top:1vw;
+}
+
+.land-img{
+    max-width:30%;
+}
+.img-container{
+    text-align: center;
+    margin-top:2vw;
+}
+
+
+.about{
+    text-align: center;
+    color:rgb(212, 211, 211);
+    
+}
+.content{
+    font-size:3vh;
+}
+
+.btn-container{
+    text-align: center;
+}
+#btn1 , #btn2 {
+    display:inline-block;
+}
+
