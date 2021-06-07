@@ -6,57 +6,55 @@ import './LiveBased.css'
 
 function LiveBased() {
 
-    const webcamRef = useRef(null);
-    const canvasRef = useRef(null);
-    useEffect(() => { 
-        const runCoco = async () => {
-            const net = await cocossd.load();
-            console.log("Handpose model loaded.");
-            
-            setInterval(() => {
-                detect(net);
-            }, 10);
-            };
-            runCoco();
-    },[]);
+     const webcamRef = useRef(null);
+  const canvasRef = useRef(null);
 
+  const runCoco = async () => {
+    const net = await cocossd.load();
+    console.log("Handpose model loaded.");
+    //  Loop and detect hands
+    setInterval(() => {
+      detect(net);
+    }, 10);
+  };
 
-    const detect = async (net) => {
-    
+  const detect = async (net) => {
     if (
-        typeof webcamRef.current !== "undefined" &&
-        webcamRef.current !== null &&
-        webcamRef.current.video.readyState === 4
-    ) 
-    {
-        const video = webcamRef.current.video;
-        const videoWidth = webcamRef.current.video.videoWidth;
-        const videoHeight = webcamRef.current.video.videoHeight;
+      typeof webcamRef.current !== "undefined" &&
+      webcamRef.current !== null &&
+      webcamRef.current.video.readyState === 4
+    ) {
+      
+      const video = webcamRef.current.video;
+      const videoWidth = webcamRef.current.video.videoWidth;
+      const videoHeight = webcamRef.current.video.videoHeight;
 
-        webcamRef.current.video.width = videoWidth;
-        webcamRef.current.video.height = videoHeight;
+      
+      webcamRef.current.video.width = videoWidth;
+      webcamRef.current.video.height = videoHeight;
 
-        canvasRef.current.width = videoWidth;
-        canvasRef.current.height = videoHeight;
-        
-        const obj = await net.detect(video);
-        
-        const ctx = canvasRef.current.getContext("2d");
-        drawRect(obj, ctx); 
+      
+      canvasRef.current.width = videoWidth;
+      canvasRef.current.height = videoHeight;
+
+      
+      const obj = await net.detect(video);
+
+      
+      const ctx = canvasRef.current.getContext("2d");
+      drawRect(obj, ctx); 
     }
-    };
+  };
 
-    
-    return (
-        <div>
-        <header className="header">
-            <h1>Live Object detection</h1>
-            <br/>
-        </header>
+  useEffect(()=>{runCoco()},[]);
+
+  return (
+    <div className="App">
+      <header className="App-header">
         <Webcam
-            ref={webcamRef}
-            muted={true} 
-            style={{
+          ref={webcamRef}
+          muted={true} 
+          style={{
             position: "absolute",
             marginLeft: "auto",
             marginRight: "auto",
@@ -66,12 +64,12 @@ function LiveBased() {
             zindex: 9,
             width: 640,
             height: 480,
-        }}
+          }}
         />
 
         <canvas
-            ref={canvasRef}
-            style={{
+          ref={canvasRef}
+          style={{
             position: "absolute",
             marginLeft: "auto",
             marginRight: "auto",
@@ -81,10 +79,11 @@ function LiveBased() {
             zindex: 8,
             width: 640,
             height: 480,
-            }}
+          }}
         />
-        </div>
-    );
+      </header>
+    </div>
+  );
 }
 
 export default LiveBased
