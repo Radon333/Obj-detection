@@ -18,7 +18,7 @@
 
 Home Page
 
-![home](https://user-images.githubusercontent.com/65075827/121136533-64910b00-c853-11eb-815b-8961bc4979a6.PNG)
+![new-home](https://user-images.githubusercontent.com/65075827/121137493-5099d900-c854-11eb-8d2a-63bfdad8aa7c.PNG)
 
 Image Based Detection Page
 
