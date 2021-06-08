@@ -1,3 +1,5 @@
+
+
 <h1 align="center">Object detection</h1>
 
 <h3>About</h3>
@@ -13,3 +15,19 @@
 
 * Object detection in an image
 * Object detection live using a camera
+
+
+Home Page
+
+![new-home](https://user-images.githubusercontent.com/65075827/121137493-5099d900-c854-11eb-8d2a-63bfdad8aa7c.PNG)
+
+Image Based Detection Page
+
+![image-based](https://user-images.githubusercontent.com/65075827/121136774-a1f59880-c853-11eb-8860-a8ce1564ff2c.PNG)
+
+Help Page
+
+![help-page](https://user-images.githubusercontent.com/65075827/121136824-afab1e00-c853-11eb-8db7-3e3b31719632.PNG)
+
+
+
