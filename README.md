@@ -14,12 +14,3 @@
 * Object detection in an image
 * Object detection live using a camera
 
-<h3>Home Page</h3>
-![home](https://user-images.githubusercontent.com/65075827/121134358-ecc1e100-c850-11eb-8dad-ece2707498bc.PNG)
-
-<h3>Image Based Detection Page</h3>
-![image-based](https://user-images.githubusercontent.com/65075827/121134492-1418ae00-c851-11eb-9458-2b033c083b17.PNG)
-
-<h3>Help Page</h3>
-![help-page](https://user-images.githubusercontent.com/65075827/121134603-37435d80-c851-11eb-8970-a220b408897a.PNG)
-
