@@ -27,7 +27,7 @@ Image Based Detection Page
 
 Help Page
 
-![help-page](https://user-images.githubusercontent.com/65075827/121136824-afab1e00-c853-11eb-8db7-3e3b31719632.PNG)
+
 
 
 
