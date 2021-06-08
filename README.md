@@ -17,5 +17,16 @@
 * Object detection live using a camera
 
 Home Page
+
 ![home](https://user-images.githubusercontent.com/65075827/121136533-64910b00-c853-11eb-815b-8961bc4979a6.PNG)
+
+Image Based Detection Page
+
+![image-based](https://user-images.githubusercontent.com/65075827/121136774-a1f59880-c853-11eb-8860-a8ce1564ff2c.PNG)
+
+Help Page
+
+![help-page](https://user-images.githubusercontent.com/65075827/121136824-afab1e00-c853-11eb-8db7-3e3b31719632.PNG)
+
+
 
