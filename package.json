@@ -1,6 +1,6 @@
 {
   "name": "obj-detection",
-  "homepage":"https://obj-detection.vercel.app/",
+  "homepage": "https://obj-detection.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
