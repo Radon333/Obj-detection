@@ -3,7 +3,7 @@
 <h1 align="center">Object detection</h1>
 
 <h3>About</h3>
-<p>A Web Application built for detecting objects in both images or live using camera.</p> 
+<p>A Web Application built for detecting objects in both images or real time using camera.</p> 
 <h3>Technologies Used</h3>
 <p> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
 <a href="https://www.tensorflow.org/js" target="_blank"> <img src="https://raw.githubusercontent.com/valohai/ml-logos/master/tensorflow-tf.svg" alt="tensorflow-js" width="40" height="40"/> </a>
@@ -14,7 +14,7 @@
 <h3>Features</h3>
 
 * Object detection in an image
-* Object detection live using a camera
+* Real time object detection 
 
 
 Home Page
